@@ -1,0 +1,15 @@
+name: intake-blog
+channels:
+- intake
+- pyviz
+- defaults
+- conda-forge
+dependencies:
+- python=3.6
+- ruamel_yaml=0.15
+- intake>=0.1.5
+- notebook
+- ipykernel
+- hvplot
+- pygithub
+- ipywidgets
