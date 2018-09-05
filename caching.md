@@ -39,13 +39,9 @@ cache has been cleared explicitly using convience methods.
 See the [documentation](https://intake.readthedocs.io/en/latest/catalog.html#caching-source-files-locally)
 for more details. 
 
-## Example
+## Example Notebook
 
-To Do:
-
-Add intake with caching to the NYC Taxi dataset to
-https://github.com/ContinuumIO/intake/blob/master/examples/caching_demo.ipynb
-
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/updates?filepath=examples%2Fcaching.ipynb)
 
 ## Future Work
 
@@ -54,3 +50,4 @@ https://github.com/ContinuumIO/intake/blob/master/examples/caching_demo.ipynb
   * Extensions to the Intake CLI to manage cached data ([PR 145](https://github.com/ContinuumIO/intake/pull/145)).
   * Cached files do not have an expiration, therefore they will need to be cleared manually to get updated data. We do generate a created date when a file is downloaded and store this in the metadata. This could be used to trigger a download using a configurable expiration duration.
   * Checksum verification need to be explored so that updated data can be downloaded regardless of expiration.
+  * An API for managing and clearing cached data at the data source level, rather than accessing the cache objects directly.
