@@ -44,7 +44,7 @@ for more details.
 
 ## Example Notebook
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/updates?filepath=examples%2Fcaching.ipynb)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/master?filepath=examples%2Fcaching.ipynb)
 
 ## What's Next
 
