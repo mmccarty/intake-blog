@@ -42,9 +42,13 @@ cache has been cleared explicitly using convenience methods.
 See the [documentation](https://intake.readthedocs.io/en/latest/catalog.html#caching-source-files-locally)
 for more details. 
 
-## Example Notebook
+The following linked notebook demonstrates caching.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/master?filepath=examples%2Fcaching.ipynb)
+
+The following linked notebook shows how caching can be used in a data science workflow.
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/master?filepath=examples%2FWalker_Lake.ipynb)
 
 ## What's Next
 

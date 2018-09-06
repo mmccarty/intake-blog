@@ -7,7 +7,7 @@ channels:
 dependencies:
 - python=3.6
 - ruamel_yaml=0.15
-- intake>=0.1.5
+- intake>=0.2.3
 - intake-xarray
 - notebook
 - ipykernel
