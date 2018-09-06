@@ -18,3 +18,4 @@ dependencies:
 - rasterio
 - zarr
 - s3fs
+- tqdm
