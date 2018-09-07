@@ -1,3 +1,4 @@
+# Intake: Caching Data on First Read Makes Future Analysis Faster
 ## Introduction
 
 Intake provides easy access data sources from remote / cloud storage, however for large files the 
@@ -10,7 +11,8 @@ local file system.
 Intake catalogs are composed of data sources, which contain attributes descibing how to 
 load data files. To enable caching, catalog authors can now specify caching parameters 
 that will be used to download data file(s), store them in a configured local directory, 
-and return their location on local disk. For example:
+and return their location on local disk. For example, a CSV data source configured with 
+caching may have a specification as follows:
 
 ```
 nyc_taxi:
@@ -33,8 +35,8 @@ much faster.
 
 Downloaded files are stored locally in the cache directory, specified in the configuration 
 file, environment variable, or at runtime. The default location for the cache directory 
-is ``~/.intake/cache``. Inside this directory are subdirectories for each data source found in 
-the catalog file that has been cached. These directories are named by hashing the data 
+is ``~/.intake/cache``. Inside this directory are subdirectories for each data source 
+that has been cached so far. These directories are named by hashing the data 
 source driver, urlpath, and cache regex to avoid collision among data sources and cache 
 specifications. Files are downloaded on the first read and will persist until the 
 cache has been cleared explicitly using convenience methods. 
@@ -42,11 +44,11 @@ cache has been cleared explicitly using convenience methods.
 See the [documentation](https://intake.readthedocs.io/en/latest/catalog.html#caching-source-files-locally)
 for more details. 
 
-The following linked notebook demonstrates caching.
+The following linked notebook will take you to a live, interactive code session that demonstrates caching.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/master?filepath=examples%2Fcaching.ipynb)
 
-The following linked notebook shows how caching can be used in a data science workflow.
+The following linked notebook will take you to a live, interactive code session that shows how caching can be used in an actual data science workflow.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mmccarty/intake-blog/master?filepath=examples%2FWalker_Lake.ipynb)
 
